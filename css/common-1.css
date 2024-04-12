@@ -1,0 +1,57 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+body{
+border-radius: 8px;
+padding: 24px;
+width: 440px;
+height: 892px;
+background: #fff;
+margin: 0 auto;
+}
+
+h2{
+font-family:"Montserrat", sans-serif;
+font-weight: 600;
+font-size: 24px;
+line-height: 133%;
+letter-spacing: 0.04em;
+color: #2e2f42;
+margin: 0 0 16px 0;
+}
+li{
+border:solid 1px #2e2f42;
+list-style: none;
+font-family: "Montserrat", sans-serif;
+padding: 8px 0 8px 16px;
+font-weight: 400;
+font-size: 16px;
+line-height: 150%;
+letter-spacing: 0.04em;
+color: #2e2f42;
+border-radius: 8px;
+
+}
+.item{
+border-radius: 8px;
+max-width: 400px;
+max-height: 400px;
+padding: 16px;
+background: #f6f6fe;
+border: none;
+gap: 24px;
+}
+#categories{
+display: flex;
+flex-direction: column;
+gap: 24px;
+padding: 16px;
+}
+ul{
+padding: 0; 
+display: flex;
+flex-direction: column;
+gap: 8px;
+}
