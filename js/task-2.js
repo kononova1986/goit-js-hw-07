@@ -20,4 +20,4 @@ const listGallery = document.querySelector('.gallery')
  return `<li><img src='${image.url}'alt='${image.alt}'</li>`
  }).join('');
 
-listGallery.insertAdjacentHTML("beforebegin", newImgGallery);
+listGallery.innerHTML = newImgGallery; 

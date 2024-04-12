@@ -6,12 +6,17 @@ function getRandomHexColor() {
 
 function createBoxes(amount) {
   const divContainer = document.getElementById('boxes');
+  divContainer.innerHTML = '';
+  
   for (let i = 0; i < amount; i++) {
     const divNew = document.createElement('div');
     divNew.style.backgroundColor = getRandomHexColor();
     divNew.style.width = `${30 + i * 10}px`;
     divNew.style.height = `${30 + i * 10}px`;
-    divContainer.prepend(divNew);
+    divNew.style.border = `1px solid black`;
+    divNew.style.marginBottom = `15px`;
+
+    divContainer.appendChild(divNew);
   }
 }
 

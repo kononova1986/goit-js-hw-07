@@ -9,3 +9,4 @@ sumItemsArray.forEach(sumItem => {
   const itemsCount = sumItem.querySelectorAll('li').length;
   console.log(`Category: ${title} \nElements: ${itemsCount}`);
 });
+
