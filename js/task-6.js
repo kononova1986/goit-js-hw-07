@@ -15,9 +15,8 @@ function createBoxes(amount) {
     divNew.style.height = `${30 + i * 10}px`;
     divNew.style.border = `1px solid black`;
     divNew.style.marginBottom = `15px`;
-
-    divContainer.appendChild(divNew);
   }
+  divContainer.appendChild(divNew);
 }
 
 function destroyBoxes() {
