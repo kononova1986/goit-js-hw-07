@@ -7,6 +7,7 @@ function getRandomHexColor() {
 function createBoxes(amount) {
   const divContainer = document.getElementById('boxes');
   divContainer.innerHTML = '';
+  const fragment = document.createDocumentFragment();
   
   for (let i = 0; i < amount; i++) {
     const divNew = document.createElement('div');
@@ -15,8 +16,10 @@ function createBoxes(amount) {
     divNew.style.height = `${30 + i * 10}px`;
     divNew.style.border = `1px solid black`;
     divNew.style.marginBottom = `15px`;
+
+    fragment.append(divNew);
   }
-  divContainer.appendChild(divNew);
+  divContainer.append(fragment);
 }
 
 function destroyBoxes() {
